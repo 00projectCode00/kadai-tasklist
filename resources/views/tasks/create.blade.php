@@ -6,7 +6,10 @@
     
     {!! Form::model($task, ['route' => 'tasks.store']) !!}
     
-        {!! Form::label('content', 'タスク名:') !!}
+        {!! Form::label('title', 'タスク名:') !!}
+        {!! Form::text('title') !!}
+        
+        {!! Form::label('content', '内容:') !!}
         {!! Form::text('content') !!}
         
         {!! Form::submit('登録') !!}
