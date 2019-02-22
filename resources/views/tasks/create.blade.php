@@ -12,6 +12,10 @@
         {!! Form::label('content', '内容:') !!}
         {!! Form::text('content') !!}
         
+        {!! Form::label('status', '状態:') !!}
+        {!! Form::select('status', array('free' => 'free', 'busy' => 'busy', 'complete' => 'complete')) !!}
+        <!--{!! Form::text('status') !!}-->
+         
         {!! Form::submit('登録') !!}
         
     {!! Form::close() !!}

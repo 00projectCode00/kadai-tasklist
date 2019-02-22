@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <h1>タスクID={{ $task->id }}: {{ $task->title }} の詳細ページ</h1>
+    <h1>タスクID= {{ $task->id }}「{{ $task->title }} 」の詳細ページ</h1>
     
-    <p>内容: {{ $task->content }}</p>
+    <p>内容= [ {{ $task->content }} ] , タスクの状態= [ {{ $task->status }} ]</p>
     
     {!! Form::model($task, ['route' => ['tasks.destroy', 'id' => $task->id], 'method' => 'delete']) !!}
     
